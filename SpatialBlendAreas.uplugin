@@ -1,0 +1,35 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "Spatial Blend Areas",
+	"Description": "Spatially-based weighting system, useful for e.g. achieving seamless ambience transitions between multiple arbitrarily-shaped outdoor environments. Includes integration with Audiokinetic Wwise",
+	"Category": "Other",
+	"CreatedBy": "Ville Ojala",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "SpatialBlendAreas",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		},
+		{
+			"Name": "WwiseIntegration",
+			"Type":	"Runtime",
+			"LoadingPhase": "Default"
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "Wwise",
+			"Enabled": true
+		}
+	]
+}
