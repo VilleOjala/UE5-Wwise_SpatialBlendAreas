@@ -38,7 +38,7 @@ The role of blend weight managers is to distribute the overall available weight 
 The weight distribution is done in the following manner:
 
 1) Starting with the highest found priority, process blend areas one priority group at a time. 
-2) The isolated weights in a priority group are summed together and then subtracted from the total weight budget (i.e. 100%). If the sum exceeds the remaining total weight budget, the isolated weights are discarded and the remaining budget (if any) is distributed between the members of the priority group based on their relative isolated weights. 
+2) The isolated weights in a priority group are summed together and then subtracted from the total weight budget (i.e. 100%). If the sum exceeds the remaining total weight budget the isolated weights are discarded and the remaining budget (if any) is distributed between the members of the priority group based on their relative isolated weights. 
 
 The base class for blend weight managers is `ABlendWeightManager`. To create a custom implementation utilizing the weighting behaviour described above, the manager Actor should be populated with components that inherit from `UActorComponent` and implement the `IBlendWeightInterface` interface. By default, the world position used for weight calculations is the first audio listener position retrieved from the `FAudioDevice`, but this behaviour can overridden with the virtual method `GetBlendPosition()`.
 
